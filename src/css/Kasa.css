@@ -1,0 +1,18 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-text {
+  display: flex;
+  gap: 57px;
+  font-size: 24px;
+}
+
+.nav-text a:last-child {
+  text-decoration: none;
+}
+
+.nav-text a {
+  color: #ff6060;
+}
