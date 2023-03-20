@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.aboutImage {
+  background-image: url('../assets/a_propos.png');
+  background-position: center top;
+  background-size: 100% auto;
+  height: 223px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.aboutPage {
+  margin-top: 63px;
+}

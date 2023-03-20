@@ -1,0 +1,60 @@
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 31px;
+}
+
+.textHidden {
+  color: #FF6060;
+  padding: 27px 27px 19px 18px;
+  font-weight: 400;
+  font-size: 24px;
+  background-color: #F6F6F6;
+  max-height: 500px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #FF6060;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1;
+}
+
+.arrow-icon {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/open.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s fixed;
+}
+
+.arrow-icon.rotate {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.textContainer.hide-text .textHidden {
+  opacity: 0;
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+}

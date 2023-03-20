@@ -1,13 +1,14 @@
 import logo from "./assets/logo.png"
-
+import { Link, useMatch } from 'react-router-dom';
+import "./css/Navbar.css"
 function Navbar() {
   return (
     <div className="Nav">
       <header className="page-header">
         <img src={logo} className="nav-logo" alt="logo" />
         <div className="nav-text">
-          <a href="/">Acceuil</a>
-          <a href="/">A Propos</a>
+          <Link to="/" className={useMatch('/') ? 'active-link' : ''}>Acceuil</Link>
+          <Link to="about" className={useMatch('/about') ? 'active-link' : ''}>A Propos</Link>
         </div>
       </header>
     </div>

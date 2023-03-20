@@ -1,0 +1,19 @@
+/* Remove underline from links */
+a {
+  text-decoration: none;
+}
+
+.active-link {
+  text-decoration: underline;
+}
+
+.nav-text {
+  display: flex;
+  gap: 57px;
+  font-size: 24px;
+}
+
+.nav-text a {
+  color: #ff6060;
+  font-weight: 500;
+}
