@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './css/ButtonWithText.css'
+import './ButtonWithText.css'
+
 const ButtonWithText = ({ buttonText, text, defaultShowText = false }) => {
   const [showText, setShowText] = useState(defaultShowText);
 

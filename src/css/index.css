@@ -124,3 +124,8 @@ code {
 header {
   margin-top: 40px;
 }
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}

@@ -2,7 +2,7 @@
 
 .homeImage {
   filter: brightness(70%);
-  background-image: url('../assets/home_image.png');
+  background-image: url('assets/home_image.png');
   background-position: center top;
   background-size: 100% auto;
   height: 223px;

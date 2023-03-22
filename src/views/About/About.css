@@ -2,7 +2,7 @@
 
 
 .aboutImage {
-  background-image: url('../assets/a_propos.png');
+  background-image: url('assets/a_propos.png');
   background-position: center top;
   background-size: 100% auto;
   height: 223px;

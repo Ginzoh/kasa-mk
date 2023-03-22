@@ -4,8 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './css/index.css';
 import App from './App';
-import Navbar from './Navbar'
-import Footer from './Footer';
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

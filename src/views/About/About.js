@@ -1,6 +1,6 @@
-import './css/About.css'
-import aboutImage from './assets/a_propos.png'
-import ButtonWithText from './ButtonWithText';
+import './About.css'
+import aboutImage from 'assets/a_propos.png'
+import ButtonWithText from 'components/ButtonWithText.js/ButtonWithText';
 
 const About = () => {
   return (

@@ -38,7 +38,7 @@ button {
 .arrow-icon {
   width: 24px;
   height: 24px;
-  background-image: url('../assets/open.png');
+  background-image: url('assets/open.png');
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;

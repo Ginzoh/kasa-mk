@@ -1,6 +1,7 @@
-import logo from "./assets/logo.png"
+import logo from "assets/logo.png"
 import { Link, useMatch } from 'react-router-dom';
-import "./css/Navbar.css"
+import "./Navbar.css"
+
 function Navbar() {
   return (
     <div className="Nav">

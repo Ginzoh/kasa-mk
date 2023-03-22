@@ -1,8 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
-import About from './About';
-import './css/Kasa.css';
-import ErrorPage from './ErrorPage';
-import Home from './Home';
+import About from './views/About/About';
+import ErrorPage from './views/ErrorPage/ErrorPage';
+import Home from './views/Home/Home';
 
 function App() {
   return (
