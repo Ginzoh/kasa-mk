@@ -7,10 +7,10 @@ function Navbar() {
     <div className="Nav">
       <header className="page-header">
         <img src={logo} className="nav-logo" alt="logo" />
-        <div className="nav-text">
+        <nav className="nav-text">
           <Link to="/" className={useMatch('/') ? 'active-link' : ''}>Acceuil</Link>
           <Link to="about" className={useMatch('/about') ? 'active-link' : ''}>A Propos</Link>
-        </div>
+        </nav>
       </header>
     </div>
   );

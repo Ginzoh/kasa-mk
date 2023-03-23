@@ -4,6 +4,7 @@
   font-weight: 700;
   font-size: 288px;
   margin: 0;
+  margin-top: 169px;
 }
 
 section {
@@ -13,4 +14,12 @@ section {
 
 .oups {
   font-size: 36px;
+  margin-top: 50px;
+}
+
+section .homeLink {
+  margin-top: 182px;
+  margin-bottom: 159px;
+  color: #FF6060;
+  text-decoration: underline;
 }
