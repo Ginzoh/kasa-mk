@@ -19,7 +19,7 @@
   transition: max-height 0.2s ease-out;
 }
 
-button {
+.buttonText {
   position: relative;
   display: flex;
   justify-content: space-between;

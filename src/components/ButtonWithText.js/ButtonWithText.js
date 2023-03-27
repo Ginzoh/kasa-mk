@@ -16,7 +16,7 @@ const ButtonWithText = ({ buttonText, text, defaultShowText = false }) => {
 
   return (
     <div className={`textContainer ${buttonText}-textContainer ${showText ? '' : 'hide-text'}`}>
-      <button className={`${buttonText}-button`} onClick={handleClick}>
+      <button className={`buttonText ${buttonText}-button`} onClick={handleClick}>
         <span>{buttonText}</span>
         <span className={arrowClass}></span>
       </button>

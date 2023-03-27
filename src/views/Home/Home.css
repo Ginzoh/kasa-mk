@@ -18,7 +18,7 @@
 .homeImageContainer::before {
   content: "Chez vous, partout et ailleurs";
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 500;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -43,6 +43,7 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  text-shadow: 1px 1px black;
 }
 
 
