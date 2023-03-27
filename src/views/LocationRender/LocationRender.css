@@ -1,0 +1,218 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+.fa-star {
+  font-size: 30px;
+  width: 30px;
+}
+
+.LocationRender {
+  color: #FF6060;
+}
+
+main .AppartImage {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  top: calc(50% - 16px);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow.left {
+  left: 23px;
+}
+
+.arrow.right {
+  right: 23px;
+}
+
+.arrow i {
+  color: black;
+}
+
+.fa-star {
+  color: #E3E3E3;
+}
+
+.filled {
+  color: #FF6060;
+}
+
+.namePicture img {
+  width: 64px;
+  height: 64px;
+  background: #C4C4C4;
+  border: none;
+  border-radius: 30px;
+}
+
+.namePicture {
+  display: flex;
+  align-items: center;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.namePicture p {
+  margin-right: 10px;
+  white-space: pre-line;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.LogTitle {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.locaTag {
+  background-color: #FF6060;
+  color: #fff;
+  padding: 8px 41px 8px 41px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tagsStars {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tagsStars div:first-child {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+}
+
+.descEquip {
+  display: flex;
+  gap: 76px;
+  margin-top: 24px;
+}
+
+.Équipements-text,
+.Description-text {
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+  line-height: 26px;
+  letter-spacing: 0em;
+}
+
+.Description-button,
+.Équipements-button {
+  font-size: 18px;
+}
+
+.Description-textContainer,
+.Équipements-textContainer {
+  flex: 1;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.name-br {
+  margin-top: 7px;
+}
+
+.information p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 767px) {
+  main .AppartImage {
+    height: 255px;
+    border-radius: 10px;
+  }
+
+  .information {
+    display: block;
+  }
+
+  .information p {
+    font-size: 14px;
+  }
+
+  .tagsStars {
+    display: block;
+  }
+
+  .LogTitle {
+    font-size: 18px;
+  }
+
+  .locaTag {
+    font-size: 10px;
+    padding: 6px 30.93px 4px 29.07px;
+    border-radius: 5px;
+  }
+
+  .descEquip {
+    display: block;
+    margin-top: 16px;
+  }
+
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .Description-textContainer {
+    margin-bottom: 20px;
+  }
+
+  .fa-star {
+    font-size: 15px;
+    width: 15px;
+  }
+
+  .namePicture img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .information p.name {
+    font-size: 12px;
+  }
+
+  .descEquip div .textHidden {
+    padding-bottom: 0%
+  }
+
+  .tagsStars div:first-child {
+    width: 100%;
+  }
+
+  .starName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+}
