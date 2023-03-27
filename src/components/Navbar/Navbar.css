@@ -17,3 +17,31 @@ a {
   color: #ff6060;
   font-weight: 500;
 }
+
+.nav-logo {
+  height: 62px;
+  object-fit: cover;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* your CSS changes for mobile screens here */
+  .nav-text {
+    font-size: 12px;
+    gap: 12px;
+    text-transform: uppercase;
+  }
+
+  .nav-logo {
+    height: 43px;
+  }
+
+  .page-header {
+    align-items: center;
+  }
+}

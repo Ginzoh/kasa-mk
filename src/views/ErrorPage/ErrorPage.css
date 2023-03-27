@@ -17,9 +17,39 @@
   margin-top: 50px;
 }
 
-section .homeLink {
+a .homeLink {
   margin-top: 182px;
   margin-bottom: 159px;
   color: #FF6060;
   text-decoration: underline;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 767px) {
+  .Error404 {
+    font-size: 96px;
+    margin-top: 195px;
+  }
+
+  .oups {
+    font-size: 18px;
+    margin-top: 11px;
+    width: 260px;
+  }
+
+  .ErrorContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .homeLink {
+    margin-bottom: 235px;
+  }
+
+  a .homeLink {
+    margin-top: 133px;
+    font-size: 14px;
+  }
 }

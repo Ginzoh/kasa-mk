@@ -74,3 +74,69 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+@media only screen and (max-width: 767px) {
+
+  /* your CSS changes for mobile screens here */
+
+  .homeImageContainer::before {
+    content: "Chez vous, partout et ailleurs";
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    transform: none;
+    top: 31px;
+    left: 20px;
+    right: 102px;
+    z-index: 1;
+  }
+
+  .location {
+    width: 100%;
+    height: 255px;
+    margin-bottom: 0px;
+  }
+
+  .locationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #F6F6F6;
+    padding: 0px;
+    border-radius: 25px;
+    margin-top: 22px;
+  }
+
+  .locationContainer {
+    /* remove grid-template-columns */
+    background-color: #F6F6F6;
+  }
+
+  .homeImage {
+    height: 111px;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .homeImageContainer {
+    position: relative;
+    height: 111px;
+  }
+
+  .homeImageContainer::before {
+    content: "Chez vous, partout et ailleurs";
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    top: 31px;
+    left: 16px;
+    right: 102px;
+    z-index: 1;
+  }
+
+  .HomePage {
+    margin-top: 16px;
+  }
+}

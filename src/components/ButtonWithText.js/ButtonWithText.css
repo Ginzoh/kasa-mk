@@ -58,3 +58,31 @@
   height: 0;
   padding: 0;
 }
+
+@media (max-width: 767px) {
+  .textContainer {
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+
+  .buttonText span:first-child {
+    font-size: 13px;
+  }
+
+  .buttonText {
+    height: 30px;
+  }
+
+  .arrow-icon {
+    width: 14px;
+    height: 14px;
+    top: 52%;
+  }
+
+  .textContainer .textHidden {
+    font-size: 12px;
+    padding: 17.3px 6.9px 52.5px 11.5px;
+    line-height: 17.11px;
+
+  }
+}
