@@ -3,14 +3,24 @@ import './LocationRender.css';
 import ButtonWithText from 'components/ButtonWithText.js/ButtonWithText';
 import { useParams } from 'react-router-dom';
 import logements from 'data/logements.json';
+import ErrorPage from 'views/ErrorPage/ErrorPage';
 
 const LocationRender = () => {
   const { id } = useParams();
-  const logement = logements.find(item => item.id === id);
-
-  const [filledStars] = useState(parseInt(logement.rating));
+  const [filledStars, setFilledStars] = useState(0);
   const [currentPictureIndex, setCurrentPictureIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
+  const logement = logements.find(item => item.id === id);
+
+  useEffect(() => {
+    if (!logement) {
+      return;
+    }
+
+    setFilledStars(parseInt(logement.rating));
+  }, [logement]);
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 768) {
@@ -26,6 +36,10 @@ const LocationRender = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  if (!logement) {
+    return <ErrorPage />;
+  }
+
   const stars = [];
   for (let i = 0; i < 5; i++) {
     stars.push(
@@ -36,7 +50,6 @@ const LocationRender = () => {
       ></span>
     );
   }
-
   const equiText = logement.equipments.map((equipment, index) => (
     <span key={index}>{equipment}<br /></span>
   ));
